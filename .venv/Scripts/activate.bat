@@ -26,9 +26,9 @@
     "%SystemRoot%\System32\chcp.com" 65001 > nul
 )
 
-@for %%i in ("C:\Users\hp\Desktop\Python-for-AI\.venv") do @set "VIRTUAL_ENV=%%~fi"
+@for %%i in ("C:\Users\hp\Desktop\python-ai\.venv") do @set "VIRTUAL_ENV=%%~fi"
 
-@set "VIRTUAL_ENV_PROMPT=python-for-ai"
+@set "VIRTUAL_ENV_PROMPT=python-ai"
 @if NOT DEFINED VIRTUAL_ENV_PROMPT (
     @for %%d in ("%VIRTUAL_ENV%") do @set "VIRTUAL_ENV_PROMPT=%%~nxd"
 )

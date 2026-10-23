@@ -36,7 +36,7 @@ class _VirtualEnvActivator:
 
         self.env = __xonsh__.env
         self.embedded_virtual_env = dirname(dirname(realpath(__file__)))
-        self.embedded_virtual_prompt = b"python-for-ai".decode("utf-8")
+        self.embedded_virtual_prompt = b"python-ai".decode("utf-8")
         self.embedded_bin_name = "Scripts"
         self.managed_vars = ("PATH", "PYTHONHOME")
 

@@ -79,7 +79,7 @@ end
 # Unset irrelevant variables.
 deactivate nondestructive
 
-set -gx VIRTUAL_ENV 'C:\Users\hp\Desktop\Python-for-AI\.venv'
+set -gx VIRTUAL_ENV 'C:\Users\hp\Desktop\python-ai\.venv'
 if string match -qr 'CYGWIN|MSYS|MINGW' (uname); and command -s cygpath >/dev/null
     set -gx VIRTUAL_ENV (cygpath -u "$VIRTUAL_ENV")
 end
@@ -94,8 +94,8 @@ set -gx PATH "$VIRTUAL_ENV"'/Scripts' $PATH
 
 # Prompt override provided?
 # If not, just use the environment name.
-if test -n 'python-for-ai'
-    set -gx VIRTUAL_ENV_PROMPT 'python-for-ai'
+if test -n 'python-ai'
+    set -gx VIRTUAL_ENV_PROMPT 'python-ai'
 else
     set -gx VIRTUAL_ENV_PROMPT (basename "$VIRTUAL_ENV")
 end

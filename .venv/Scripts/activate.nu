@@ -69,15 +69,15 @@ export-env {
         }
     }
 
-    let virtual_env = 'C:\Users\hp\Desktop\Python-for-AI\.venv'
+    let virtual_env = 'C:\Users\hp\Desktop\python-ai\.venv'
     let bin = 'Scripts'
     let path_name = if (has-env 'Path') { 'Path' } else { 'PATH' }
     let venv_path = ([$virtual_env $bin] | path join)
     let new_path = ($env | get $path_name | prepend $venv_path)
-    let virtual_env_prompt = if ('python-for-ai' | is-empty) {
+    let virtual_env_prompt = if ('python-ai' | is-empty) {
         ($virtual_env | path basename)
     } else {
-        'python-for-ai'
+        'python-ai'
     }
     let new_env = { $path_name: $new_path VIRTUAL_ENV: $virtual_env VIRTUAL_ENV_PROMPT: $virtual_env_prompt }
     let old_prompt_command = if (has-env 'PROMPT_COMMAND') { $env.PROMPT_COMMAND } else { '' }

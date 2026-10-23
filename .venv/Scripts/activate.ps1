@@ -58,8 +58,8 @@ deactivate -nondestructive
 $VIRTUAL_ENV = $BASE_DIR
 $env:VIRTUAL_ENV = $VIRTUAL_ENV
 
-if ("python-for-ai" -ne "") {
-    $env:VIRTUAL_ENV_PROMPT = "python-for-ai"
+if ("python-ai" -ne "") {
+    $env:VIRTUAL_ENV_PROMPT = "python-ai"
 }
 else {
     $env:VIRTUAL_ENV_PROMPT = $( Split-Path $env:VIRTUAL_ENV -Leaf )
